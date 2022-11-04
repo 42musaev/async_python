@@ -19,8 +19,7 @@ tasks = [g1, g2]
 while tasks:
     task = tasks.pop(0)
     try:
-        i = next(task)
-        print(i)
+        print(next(task))
         tasks.append(task)
     except StopIteration:
         pass
